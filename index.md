@@ -1,5 +1,5 @@
 ---
-title: Brand Centre | Bolton Moorland Scouts
+title: Brand Centre
 ---
 
 ## Welcome to GitHub Pages
