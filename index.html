@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brand Centre | Bolton Moorland Scouts</title>
+</head>
+<body>
+  <div id="catalog"></div>
+
+  <script src="https://unpkg.com/catalog@3/dist/catalog-standalone.development.js"></script>
+
+  <!-- Use the minified production version to get optimal performance -->
+  <!-- <script src="https://unpkg.com/catalog@3/dist/catalog-standalone.min.js"></script> -->
+
+  <script>
+    Catalog.render({
+      title: 'Brand Centre',
+      logoSrc: 'img/stacked_logo.jpg',
+      theme: {
+        brandColor: '#7413dc',
+        pageHeadingBackground: "#7413dc",
+        navBarTextColor: '#003982',
+        sidebarColorText: '#006ddf',
+        sidebarColorTextActive: "#7413dc",
+        linkColor: "#7413dc",
+      },      
+      pages: [
+        {
+          path: '/',
+          title: 'Introduction',
+          src: 'docs/introduction.md'
+        },
+        {
+          path: '/colours',
+          title: 'Colours',
+          src: 'docs/colours.md'
+        },
+        {
+          path: '/district-logos',
+          title: 'District Logos',
+          src: 'docs/district-logos.md'
+        }
+      ]
+    }, document.getElementById('catalog'));
+  </script>
+</body>
+</html>
